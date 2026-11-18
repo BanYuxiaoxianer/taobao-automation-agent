@@ -1,11 +1,11 @@
-# 商家智能运营 Agent · 深加工版（by 31）
+# 商家智能运营 Agent · 
 
 > 一个跑在自己电脑上的小店运营助手：**选品 → 写标题卖点 → 合规自查 → 客服话术 → 运营建议**。
 > 只依赖 `httpx` + `rich` 两个包，没有 Docker、没有数据库服务、没有 GPU 也能启动。
 
 本版基于开源项目 [yyf2002-oos/merchant-agent](https://github.com/yyf2002-oos/merchant-agent) 的**思路**重写，
 代码结构、模块划分与实现全部重做，去掉了对 Ollama / MySQL / Milvus / Gradio 的硬依赖，
-并补齐了上游缺失的几块能力（见下方「相比上游改了什么」）。
+并补齐了上游缺失的几块能力。
 
 ---
 
