@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 运行时数据（知识库示例由 seed.py 生成，草稿与数据库属于本机私有数据）
+data/
+outputs/
+*.db
+*.log
+
+# 本地密钥
+.env
