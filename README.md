@@ -13,30 +13,6 @@
 
 **最省事：双击 `启动.bat`。** 它会自动建环境、装依赖、生成示例数据、开网页（只第一次慢，之后几秒）。
 
-手动方式：
-
-```powershell
-# 1. 进目录
-cd D:\花梨鼠标\merchant-agent
-
-# 2. 建环境（只需一次）
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-
-# 3. 生成示例知识库（商品/FAQ/供应商/模板，之后随便改）
-python seed.py
-
-# 4. 自检：告诉你缺什么、怎么补
-python doctor.py
-
-# 5a. 开网页（推荐）
-python webui.py            # 浏览器自动打开 http://127.0.0.1:7860
-
-# 5b. 或者用命令行
-python cli.py              # 交互菜单
-python cli.py ask "买家问什么时候发货，怎么回"
-```
 
 **没有 API Key 也能启动**：会自动进入「离线规则模式」——
 标题模板、合规检查、利润计算、草稿清单、客服知识库检索这些**不花 token 的功能照常可用**，
